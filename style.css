@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-background-color: #0d1a2d;
+  --secondary-background-color: #15273f;
+  --primary-font-color: #788eae;
+  --secondary-font-color: #fff;
+  --terciary-font-color: #22e5de;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.image-container {
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container:hover {
+  background: url("img/icon-view.svg") no-repeat center center;
+  cursor: pointer;
+}
+
+.image-container:hover img {
+  opacity: 0.6;
+}
+
+body {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 20rem;
+  background-color: var(--secondary-background-color);
+  border-radius: 20px;
+}
+
+.nft-info {
+  margin: 0 15px;
+}
+
+.nft-info h1 {
+  color: var(--secondary-font-color);
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+  display: inline-block;
+}
+
+.nft-info h1:hover {
+  color: var(--terciary-font-color);
+  cursor: pointer;
+}
+
+.nft-info .description {
+  color: var(--primary-font-color);
+  font-size: 0.898rem;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--primary-font-color);
+  padding: 20px 0;
+}
+
+.price .ethereum {
+  color: var(--terciary-font-color);
+  font: bold 0.85rem sans-serif;
+}
+
+.price .days-left {
+  color: var(--primary-font-color);
+  font: bold 0.8rem sans-serif;
+}
+
+.price span {
+  margin-left: 5px;
+}
+
+hr {
+  background-color: var(--primary-font-color);
+}
+
+.creator {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.creator img {
+  width: 30px;
+  border: 1px solid #fff945;
+  border-radius: 50px;
+}
+
+.creator p {
+  margin-left: 10px;
+  color: var(--primary-font-color);
+}
+
+.creator span {
+  color: var(--secondary-font-color);
+  text-transform: capitalize;
+}
+
+.creator span:hover {
+  color: var(--terciary-font-color);
+  cursor: pointer;
+}
